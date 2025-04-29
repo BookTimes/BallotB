@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  background: radial-gradient(
+    circle at bottom,
+    rgb(255, 174, 174),
+    transparent
+  );
+  height: 100vh;
+}
+
+.hid {
+  display: none;
+}
+
+.nav-logo {
+  width: 9vw;
+  max-width: 6vw;
+}
+
+.nav {
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffdcdc;
+  padding: 10px;
+}
+
+.nav-logo-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-head {
+  font-size: 4vw;
+  line-height: 3vw;
+  color: rgb(181, 36, 36);
+}
+
+.wlc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.wlc-head {
+  color: rgb(181, 36, 36);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 5vw;
+  margin-bottom: 10vh;
+}
+
+.wlc-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.wlc-button {
+  background: rgb(181, 36, 36);
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  width: 45vw;
+}
+
+.wlc-button:hover {
+  background: rgb(109, 18, 18);
+}
+
+.vote-cont {
+  background: rgb(181, 36, 36);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vote-counter {
+  font-size: 50px;
+  line-height: 6.4vw;
+}

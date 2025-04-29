@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../host_setup/style.css" />
+    <link rel="stylesheet" href="../../welcome-window/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BallotBox</title>
+  </head>
+  <body>
+    <div class="message">
+      <span class="setup-subtitle">Code copied to clipboard</span>
+    </div>
+    <div class="nav">
+      <div class="nav-logo-cont">
+        <img class="nav-logo" src="../../img/logo.png" alt="" />
+        <span class="nav-head">Ballot<br />Box</span>
+      </div>
+      <div class="vote-cont">
+        <span class="vote-counter-title load">Vote count</span>
+        <span class="vote-counter load">000</span>
+      </div>
+    </div>
+    <div class="booth-setup-cont">
+      <div class="booth-data-cont">
+        <div class="booth-setup">
+          <span class="setup-title">Connect Booth Devices</span> <br />
+          <span class="setup-subtitle"
+            >Make sure all devices are under the same network
+          </span>
+          <span class="setup-title">Connection code</span>
+          <span id="ipp" class="wlc-head" onclick="miz()">28328389238</span>
+          <span class="setup-subtitle">Click the code to copy</span>
+          <div class="booth-request hid">
+            <span class="setup-title booth-waiting"
+              >Waiting for booths to connect</span
+            >
+          </div>
+        </div>
+        <div class="booth-setup">
+          <span class="setup-title"
+            ><span id="boothNo">0</span> Booths Connected
+          </span>
+          <button class="refresh-btn hid" onclick="clienting()">
+            <img class="refresh-img" src="../../img/refresh.png" alt="" />
+          </button>
+          <div class="client-list"></div>
+
+          <br />
+          <button class="booth-btn">
+            <span class="setup-title" onclick="startE()">Start Election</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="booth-request-cont">
+        <span class="setup-title">Booth List</span>
+        <div id="wait" class="booth-request">
+          <span class="setup-title booth-waiting"
+            >Waiting for booths to connect</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

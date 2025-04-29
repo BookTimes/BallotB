@@ -1,0 +1,184 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.candid-cont-cont {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 100vw;
+}
+
+.logo-cont {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 10vw;
+}
+
+.candid-cont {
+  width: 20vw;
+  background: rgba(255, 128, 128, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(255, 128, 128, 0.72);
+  border-top-left-radius: 100px; /* Makes the top-left corner circular */
+  border-top-right-radius: 100px; /* Makes the top-right corner circular */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.candid-summary {
+  background: rgba(233, 51, 51, 0.34);
+  border: 1px solid rgba(255, 128, 128, 0.72);
+  padding: 15px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.ballot-counter-title {
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: rgb(106, 11, 11);
+}
+
+.ballot-counter {
+  font-size: 45px;
+  font-family: "Bebas Neue";
+  color: rgb(103, 4, 17);
+}
+
+.candids {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.candid {
+  background: rgba(255, 128, 128, 0.34);
+  border-radius: 16px;
+  box-shadow: inset 0 0 20px rgba(240, 118, 118, 0.192),
+    inset 0 0 5px rgba(255, 0, 0, 0.274);
+  border: 1px solid rgba(255, 128, 128, 0.72);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.candid-title {
+  color: rgb(84, 9, 20);
+  font-family: "Poppins";
+}
+
+.show-btn {
+  transition: 2s;
+  transition-property: opacity;
+
+  background: rgba(255, 254, 254, 0.34);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 128, 128, 0.72);
+  padding: 10px;
+}
+
+.show-btn:hover {
+  background: rgba(255, 0, 51, 0.113);
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgb(244, 172, 172);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 128, 128, 0.72);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  box-shadow: inset 0 0 20px rgba(240, 118, 118, 0.192),
+    inset 0 0 5px rgba(255, 0, 0, 0.274);
+  border-top-left-radius: 100px; /* Makes the top-left corner circular */
+  border-top-right-radius: 100px;
+  /* transform: translateY(-50%) translateX(-50%); */
+}
+
+.rank {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: overline;
+}
+
+.overlay-cont {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 60%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 5;
+}
+
+.ballot-choice {
+  background: rgba(255, 56, 56, 0.823);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgb(255, 121, 121);
+  padding: 20px;
+  color: white;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  width: 20vw;
+  overflow: hidden;
+  margin: 10px;
+}
+
+/* .ballot-choice:hover {
+  background: rgba(238, 95, 95, 0.34);
+} */
+
+/* .ballot-choice:hover {
+  background: #863232;
+} */
+
+.boom {
+  background: #320101f9;
+  height: 100%;
+  width: 0%;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  /* opacity: 0; */
+  transition: width 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.ballot-choice:active .boom {
+  opacity: 1;
+  transition: 2s width;
+  width: 100%;
+  height: 100%;
+}

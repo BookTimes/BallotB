@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../welcome-window/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../handshake/style.css" />
+    <link rel="stylesheet" href="../host_setup/style.css" />
+    <title id="titleCard">Ballot Box</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo-cont">
+        <img class="logo" src="../../img/logo.png" alt="" />
+      </div>
+      <div class="candid-cont-cont">
+        <div class="candid-cont">
+          <div class="candid-summary">
+            <span class="ballot-counter-title">Vote count</span>
+            <span class="ballot-counter">000</span>
+          </div>
+          <div class="candids">
+            <div class="overlay">
+              <div class="overlay-cont">
+                <button class="show-btn">
+                  <span class="candid-title">Show Polling</span>
+                </button>
+                <button class="ballot-choice end">
+                  <div class="boom"></div>
+                  Close Ballot
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="booth-request-cont">
+          <span class="setup-title">Booth List</span>
+          <div id="wait" class="booth-request">
+            <span class="setup-title booth-waiting"
+              >Waiting for booths to connect</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../handshake/script.js"></script>
+<script src="script.js"></script>

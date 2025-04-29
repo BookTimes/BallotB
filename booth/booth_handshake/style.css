@@ -1,0 +1,110 @@
+.connect-btn {
+  color: rgb(255, 204, 204);
+  background: linear-gradient(to right, rgb(137, 1, 1), rgb(237, 129, 129));
+  background-size: 180% 180%;
+  animation: loading 6s infinite;
+  width: 80%;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cir {
+  transition: 1s;
+  opacity: 0;
+}
+
+.connect-cont {
+  background: #d45e5e;
+  box-shadow: inset 0 0 40px #961212;
+  font-family: "Poppins";
+  width: 20vw;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.loading-ring {
+  position: absolute;
+  background: radial-gradient(
+    circle at center,
+    transparent 20%,
+    rgb(239, 159, 159)
+  );
+  aspect-ratio: 1/1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  animation: load 3s infinite;
+}
+
+.connect-title {
+  color: #560c0c;
+  text-align: center;
+}
+
+.connect-title-connected {
+  transition: 2s;
+  color: rgb(255, 200, 200);
+}
+
+.connect-title-disconnected {
+  transition: 2s;
+  color: #d41919;
+}
+
+@keyframes waiting {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 10%;
+    width: 25vw;
+  }
+}
+
+@keyframes load {
+  0% {
+    width: 20vw;
+  }
+  50% {
+    width: 32vw;
+  }
+  100% {
+    width: 20vw;
+  }
+}
+
+@keyframes connect {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 110vw;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.loader {
+  visibility: hidden;
+}

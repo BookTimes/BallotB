@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../host/host_setup/style.css" />
+    <link rel="stylesheet" href="../../welcome-window/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BallotBox</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-logo-cont">
+        <img class="nav-logo" src="../../img/logo.png" alt="" />
+        <span class="nav-head">Ballot<br />Box</span>
+      </div>
+      <div class="vote-cont">
+        <span class="vote-counter-title load">Vote count</span>
+        <span class="vote-counter load">000</span>
+      </div>
+    </div>
+    <div class="host-setup">
+      <span class="setup-title">Booth Setup</span> <br />
+      <span class="setup-subtitle">Enter the name of the Booth operator</span>
+
+      <input
+        class="setup-field"
+        placeholder="Booth Officer's Name"
+        type="text"
+        name=""
+        id=""
+      />
+
+      <button onclick="saveBoothData()" class="setup-btn setup-next hid">
+        Next
+      </button>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

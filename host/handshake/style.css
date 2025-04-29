@@ -1,0 +1,182 @@
+.booth-setup {
+  background: rgba(255, 128, 128, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(255, 128, 128, 0.72);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  /* position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px; */
+}
+.booth-setup-cont {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  align-items: start;
+  padding: 10px 15px;
+}
+
+.booth-data-cont {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wlc-head {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.setup-subtitle {
+  text-align: center;
+}
+
+.booth-waiting {
+  width: 100%;
+  text-align: center;
+}
+.booth-request-cont {
+  background: rgba(255, 128, 128, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  width: 40vw;
+  /* position: relative;
+  left: 50%;
+  transform: translateX(-50%); */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  gap: 10px;
+  height: 65vh;
+}
+
+.booth-request {
+  border-radius: 16px;
+  background: linear-gradient(
+    to top left,
+    rgba(251, 132, 132, 0.98),
+    rgba(255, 189, 189, 0.98)
+  );
+  background-size: 180% 180%;
+  animation: loading 3s infinite;
+  border: 1px solid rgba(235, 137, 137, 0.98);
+  padding: 5px 10px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.booth-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booth-title {
+  font-family: "Bebas Neue";
+  color: rgb(176, 41, 41);
+  font-size: 20px;
+}
+
+.booth-subtitle {
+  font-family: "Poppins";
+  font-size: 10px;
+}
+
+.booth-btn {
+  padding: 6px;
+  margin: 5px;
+  font-size: 10px;
+  /* From https://css.glass */
+  background: rgba(172, 32, 32, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(172, 32, 32, 0.98);
+  color: white;
+}
+
+.booth-btn:hover {
+  background: rgba(160, 0, 0, 0.4);
+}
+
+@keyframes loading {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.booth-title > .booth-sect > .booth-request > .client-list {
+  font-size: 2px !important;
+}
+
+.client-list {
+  width: 80%;
+  max-height: 18vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.client-title {
+  font-size: 15px;
+}
+
+.client-btn {
+  font-size: 7px;
+}
+
+#ipp:active {
+  color: rgb(255, 255, 255);
+}
+
+.message {
+  position: absolute;
+  background: #ff85855f;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 10px;
+  border: 2px solid rgb(197, 82, 82);
+  border-radius: 15px;
+  opacity: 0;
+}
+
+.refresh-btn {
+  background: transparent;
+  border: none;
+}
+
+.refresh-img {
+  width: 35px;
+}
+
+.refresh-img:hover {
+  filter: brightness(1000000%);
+}
+
+.refresh-img:active {
+  filter: brightness(100%);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../host/host_setup/style.css" />
+    <link rel="stylesheet" href="../../welcome-window/style.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BallotBox</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-logo-cont">
+        <img class="nav-logo" src="../../img/logo.png" alt="" />
+        <span class="nav-head">Ballot<br />Box</span>
+      </div>
+      <div class="vote-cont">
+        <span class="vote-counter-title load">Vote count</span>
+        <span class="vote-counter load">000</span>
+      </div>
+    </div>
+    <div class="loading-ring loader"></div>
+    <div class="connect-cont loader">
+      <span onclick="coo()" class="connect-title">Connecting</span>
+    </div>
+    <div class="host-setup">
+      <span class="setup-title">Host Code</span> <br />
+      <span class="setup-subtitle"
+        >Make sure host and booth are under the same network</span
+      >
+
+      <input
+        class="setup-field"
+        placeholder="Enter host code"
+        type="text"
+        name=""
+        id=""
+      />
+
+      <button
+        onclick="saveBoothData(this)"
+        class="setup-btn setup-next connect-btn"
+      >
+        Connect
+      </button>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

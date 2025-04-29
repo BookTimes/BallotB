@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../host_setup/style.css" />
+    <link rel="stylesheet" href="../../welcome-window/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BallotBox</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-logo-cont">
+        <img class="nav-logo" src="../../img/logo.png" alt="" />
+        <span class="nav-head">Ballot<br />Box</span>
+      </div>
+      <div class="vote-cont">
+        <span class="vote-counter-title load">Vote count</span>
+        <span class="vote-counter load">000</span>
+      </div>
+    </div>
+    <div class="host-setup">
+      <span class="setup-title">Primary Setup</span> <br />
+      <span class="setup-subtitle"
+        >Must have minimum six characters for all entries</span
+      >
+
+      <input
+        class="setup-field"
+        placeholder="Enter Ballot Title"
+        type="text"
+        name=""
+        id=""
+      />
+
+      <input
+        class="setup-field hid"
+        placeholder="Password"
+        type="password"
+        name=""
+        id=""
+      />
+
+      <input
+        class="setup-field hid"
+        placeholder="Re-enter Password"
+        type="password"
+        name=""
+        id=""
+      />
+      <button onclick="primarysave()" class="setup-btn setup-next hid">
+        Next
+      </button>
+      <br />
+      <span class="setup-warn">Wrong password re-entered</span>
+      <span class="setup-warn">Enter Ballot title</span>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

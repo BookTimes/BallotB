@@ -1,0 +1,84 @@
+.host-setup {
+  background: rgba(255, 128, 128, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(255, 128, 128, 0.72);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.setup-title {
+  color: rgb(133, 0, 0);
+  font-family: "Poppins";
+}
+
+.setup-subtitle {
+  color: rgb(133, 0, 0);
+  font-family: "Poppins";
+  font-size: 10px;
+}
+
+.setup-field {
+  background: rgba(255, 88, 88, 0.58);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(255, 88, 88, 0.94);
+  padding: 10px;
+  margin: 10px 0px;
+  width: 90%;
+  color: rgb(101, 13, 13);
+  font-weight: 500;
+}
+
+.setup-field::placeholder {
+  color: rgb(249, 190, 190);
+}
+
+.setup-btn {
+  /* From https://css.glass */
+  background: rgba(183, 35, 35, 0.58);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(137, 27, 27, 0.94);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 215, 215);
+  padding: 10px;
+}
+
+.setup-btn:hover {
+  background: rgba(60, 13, 13, 0.58);
+  color: rgb(255, 103, 103);
+}
+
+.setup-next {
+  /* position: absolute; */
+  /* top: 70%; */
+  /* transform: translateX(-50%) translateY(-50%); */
+  font-size: 1.5vw;
+  font-family: "Poppins";
+}
+
+.setup-warn {
+  color: rgb(173, 12, 12);
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  display: none;
+}
+
+.booth-act {
+  display: inherit !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
