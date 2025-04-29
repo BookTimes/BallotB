@@ -39,20 +39,5 @@
     "electron-squirrel-startup": "^1.0.1",
     "ip-to-int": "^0.3.1",
     "ws": "^8.18.1"
-  },
-  "config": {
-    "forge": {
-      "publishers": [
-        {
-          "name": "@electron-forge/publisher-github",
-          "config": {
-            "repository": {
-              "owner": "BookTimes",
-              "name": "electron-publish-example"
-            }
-          }
-        }
-      ]
-    }
   }
 }
